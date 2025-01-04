@@ -1,0 +1,56 @@
+<html>
+   <head>
+      <title>RagnarCade Center</title>
+      <style>
+         body {
+            background: -webkit-gradient(linear, left top, left bottom, from(#0f0f0f), to(#202020)) fixed;
+         padding: 15px;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         -ms-transform: translateX(-50%) translateY(-50%);
+         -webkit-transform: translate(-50%,-50%);
+         transform: translate(-50%,-50%);
+         }
+         .container {
+         width: min-content;
+         display: grid; 
+         text-align: center;
+         grid-template-columns: 1fr 1fr; 
+         gap: 20px; 
+         grid-template-areas: "foto video ." "foto links ." " foto firma ." ". . ."; 
+         }
+         .foto { grid-area: foto; border: solid 1px #fff; height: min-content; border-radius: 25px; box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);}
+         .video { grid-area: video; border: solid 1px #fff; height: min-content; border-radius: 25px; box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);}
+         .links { grid-area: links; margin-left: 4px;}
+         .firma { grid-area: firma;  width: min-content; height: min-content; }
+         .gif {box-shadow: 0px 0px 10px 2px rgb(0, 0, 0); border: solid 1px #fff;}
+         button {
+         background-color: #000000;
+         color: #e7e7e7;
+         transition-duration: 0.3s;
+         border: 1px solid #e7e7e7;
+         border-radius: 50px; /* sets the border radius to half of its width to create an oval shape */
+         padding: 10px 90px; /* adjust padding as needed */
+         }
+         .button1 {padding: 10px 110px; box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);}
+         .button2 {padding: 10px 92px; margin-left: 1; box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);}
+         .button3 {padding: 10px 80px; box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);}
+         .button4 {padding: 10px 98px; box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);}
+         .button5 {padding: 10px 67px; box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);}
+         .todoroki {opacity: 0.6; transition-duration: 0.3s;}
+         button:hover { color: #ffffff; box-shadow: 0px 0px 10px 0px rgb(255, 255, 255); border: 1px solid #ffffff;}
+         .todoroki:hover {opacity: 1;}
+         img {border-radius: 25px; }
+         iframe {border-radius: 25px;}
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <div class="foto"><img src="https://i.imgur.com/U6Q35Pg.jpg"></div>
+         <div class="video"><iframe src="https://www.youtube.com/embed/RmTq3cJqyCo" width="320" height="180" frameborder="0" ></iframe></div>
+         <div class="links"><button class="button1" onclick="window.open('https://discord.gg/Vkf6RnMq2q', '_blank', 'noopener, noreferrer')" type="button">Project Todoroki</button><br><br><button class="button2" onclick="window.open('http://todoroki.dniel97.me', '_blank', 'noopener, noreferrer')" type="button">Todoroki Control Panel</button><br><br><button class="button3" onclick="window.open('http://ragnarcade.mypi.co:8090', '_blank', 'noopener, noreferrer')" type="button">RagnarCade Control Panel</button><br><br><button class="button4" onclick="window.open('https://initiald.sega.jp/inidac/', '_blank', 'noopener, noreferrer')" type="button">InitialD THE ARCADE</button><br><br><button class="button5" onclick="window.open('https://www.youtube.com/watch?v=RmTq3cJqyCo', '_blank', 'noopener, noreferrer')" type="button">ITZY - Bet On Me - Music Video</button><br><br><img class="gif" src="https://i.imgur.com/zFqIN90.gif" width="316"></div>
+         <div class="firma"><img class="todoroki" src="https://i.imgur.com/pckUzJd.png" width="320"></div>
+       </div>
+   </body>
+</html>
