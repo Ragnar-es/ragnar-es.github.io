@@ -7,11 +7,6 @@
     <meta property="og:url" content="https://ragnar-es.github.io/eta">
     <meta property="og:type" content="website">
     <title>NO ETA</title>
-	<script>
-	window.onload = function() {
-		var context = new AudioContext();
-	}
-	</script>
     <style>
         body {
             margin: 0;
@@ -118,6 +113,11 @@
             animation: dvd-bounce 3s infinite linear;
         }
 
+		.audio {
+			position:absolute;
+			bottom:2%;
+			left:42%;
+		}
         @keyframes dvd-bounce {
             0% {
                 top: 0;
@@ -160,7 +160,7 @@
         <div class="no-eta-dvd" style="animation-delay: 0s;">NO ETA</div>
         <div class="no-eta-dvd" style="animation-delay: 0.5s;">NO ETA</div>
         <div class="no-eta-dvd" style="animation-delay: 1s;">NO ETA</div>
-		<audio controls autoplay><source src="NO_ETA.mp3" type="audio/mpeg">Yourbrower</audio>
+		<div class="audio"><audio controls loop><source src="NO_ETA.mp3" type="audio/mpeg"></audio></div>
     </div>
 </body>
 </html>
