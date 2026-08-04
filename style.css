@@ -182,8 +182,18 @@ body{
     }
 }
 
+.video{ order:1; }
+.menu{ order:2; }
+.gif{ order:3; }
+.logo{ order:4; }
+
 @media screen and (max-width:600px){
 
+    .menu{ order:1; }
+    .video{ order:2; }
+    .gif{display:none;}
+    .logo{ order:3; }
+    
     .container{
         width:96vw;
         padding:15px;
